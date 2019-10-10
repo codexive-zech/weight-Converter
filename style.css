@@ -1,0 +1,75 @@
+body {
+    background: rgba(5, 143, 23, 0.644);
+    color: #fff;
+}
+
+h1 {
+    font-weight: bold;
+    margin-top:20px;
+    margin-bottom: 5%;
+    text-align: center;
+    color: yellow; 
+}
+
+.cd-space {
+    padding: 5px;
+    margin: 9px 0;
+}
+
+.info-section {
+    margin-top: 100px;
+}
+
+.error {
+    padding: 5px;
+    margin-bottom: 15px;
+    background: red;
+    text-align: center;
+    border-radius: 10px;
+    word-spacing: 5px;
+    font-size: 20px;
+}
+
+.good {
+    padding: 5px;
+    margin-bottom: 15px;
+    background:green;
+    text-align: center;
+    border-radius: 10px;
+    font-size: 20px;
+}
+
+p {
+    text-align: right;
+    margin-top: 5px;
+    color: yellow;
+}
+
+@media (max-width: 992px) {
+    h1.display-4 {
+        font-size: 39px;
+    }
+}
+
+@media (max-width: 768px) {
+    #message {
+        font-size: 18px;
+        word-spacing: normal;
+    }
+}
+
+@media (max-width: 576px) {
+    h1.display-4 {
+        font-size: 30px;
+    }
+
+    #message {
+        font-size: 14px;
+        word-spacing: normal;
+    }
+
+    p.lead {
+        font-size: 12px;
+    }
+}
+

@@ -16,6 +16,7 @@
                 <div class="col-sm-12 col-md-6">
                     <h1 class="display-4">Weight Converter</h1>
                     <form>
+                        <div id="weightInfo"></div>
                         <div class="form-group">
                         <input type="number" id="weightInput" class="form-control" placeholder="Enter Your Pounds Value">
                         </div>
@@ -36,15 +37,17 @@
                             <div id="ozOutput"></div>
                         </div>
                     </div>
+                    
                     <div class="info-section">
                         <form id="messageForm">
                             <div class="form-group">
-                                <input type="text" id="name" class="form-control" placeholder="Enter Your First Name ">
+                                <input type="text" id="name" class="form-control" placeholder="Enter Your First  Name " onkeypress="return ((event.charCode > 64 && event.charCode < 91) || (event.charCode > 96 && event.charCode<123))">
+                                
                             </div>
                             <div id="message"></div>
                             <button type="submit" class="btn btn-secondary btn-block">Submit Name</button>
                         </form>
-                        <p class="lead">Designed by codexive-zech</p>
+                        <p class="lead">Designed by codexive-zech </p>
                     </div>
                 </div>
                 <div class="col-sm-12 col-md-3"></div>

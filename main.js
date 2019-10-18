@@ -23,12 +23,13 @@ function convert (e){
         kilograms.innerHTML = weightInput / 2.2046;
 
         ounces.innerHTML = weightInput * 16;
+        weightInfo.style.visibility = 'hidden';
     }
     else {
         weightInfo.classList.add('error');
         weightInfo.innerHTML = 'Wrong Input'
         output.style.visibility = 'hidden';
-        setTimeout(() => weightInfo.remove(), 3000);
+        weightInfo.style.visibility = visible;
     }
 }
 
@@ -44,7 +45,6 @@ function quote(e) {
     else {
         message.classList.add('good');
         message.innerHTML = `Thanks You ${nameInput.value} For Your Time`;
-        setTimeout(() => message.remove(), 5000);
     }
 
     nameInput.value = '';
